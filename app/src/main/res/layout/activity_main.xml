@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include layout="@layout/background_layout"/>
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestion des Matières"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(ESSAT)"
+        android:textSize="18sp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/ajouterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une matière"
+        android:layout_below="@id/subtitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <ListView
+        android:id="@+id/matiereListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ajouterButton"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

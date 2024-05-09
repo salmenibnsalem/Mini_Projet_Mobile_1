@@ -1,0 +1,29 @@
+<!-- background_layout.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <ImageView
+        android:layout_width="140dp"
+        android:layout_height="190dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

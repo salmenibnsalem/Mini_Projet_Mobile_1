@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjoutActivity">
+    <include layout="@layout/background_layout"/>
+
+    <TextView
+        android:id="@+id/ajouterTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une matière"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/titreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre:"
+        android:textStyle="bold"
+        android:layout_below="@id/ajouterTitleTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/titreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Titre de la matière"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/niveauTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niveau:"
+        android:textStyle="bold"
+        android:layout_below="@id/titreEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/niveauEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/niveauTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Niveau de la matière"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/ajouterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_below="@id/niveauEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
